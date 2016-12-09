@@ -1,6 +1,7 @@
-# Dragula for Rails
+# Dragula-Rails
 
-Dragula, ready for your asset pipeline.
+This Gem integrates [bevacqua](https://github.com/bevacqua)'s
+[dragula](https://github.com/bevacqua/dragula/) to your Rails project.
 
 ## Installation
 
@@ -20,17 +21,24 @@ Or install it yourself as:
 
 ## Usage
 
-Pretty standard stuff, you do the following:
+This gem uses a Rails Engine to make dragula's assets available to you.
 
-1. Add `//= require dragula` to `application.js`
-2. Add `*= require dragula` to `application.css`
+Require the JavaScript files from your `application.js` or wherever needed using:
+
+```
+//= require dragula
+```
+
+Require the CSS files from your `application.scss` or wherever needed using:
+
+```
+*= require dragula
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/why-el/dragula-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
